@@ -14,7 +14,7 @@ permissions:
 jobs:
   build-flatpak:
     name: Build Flatpak
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-2vcpu-ubuntu-2604
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -43,7 +43,7 @@ jobs:
 
   build-srpm:
     name: Build SRPM
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-2vcpu-ubuntu-2604
     container: fedora:latest
     steps:
       - name: Checkout repository
